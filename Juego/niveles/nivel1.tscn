@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Juego/Personaje/PersonajePrincipal.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Juego/plataformas/plataformaCesped.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Juego/plataformas/plataforma.tscn" type="PackedScene" id=3]
+
+[node name="nivel1" type="Node2D"]
+
+[node name="PersonajePrincipal" parent="." instance=ExtResource( 1 )]
+position = Vector2( 141.175, 602.112 )
+velocidad = Vector2( 290, 900 )
+fuerza_salto = 3000
+
+[node name="plataforma" parent="." instance=ExtResource( 3 )]
+position = Vector2( 390.297, 411.065 )
+
+[node name="plataformaCesped" parent="." instance=ExtResource( 2 )]
+position = Vector2( 645.363, 450.928 )
+
+[node name="plataformaCesped2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 569.509, 615.896 )
+scale = Vector2( 3, 0.3 )
+
+[node name="plataformaCesped3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1043.92, 308.792 )
+
+[node name="plataformaCesped4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 842.002, 395.838 )
